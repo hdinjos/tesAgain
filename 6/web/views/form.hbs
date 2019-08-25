@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            padding-left: 15px;
+            background-color:#f5f5f5;
+        }
+        /* .container{
+            background-color: pink;
+        } */
+        .textinput input{
+            display: block;
+            margin: 10px 0px 30px 0px;
+        }
+        .address textarea {
+            display: block;
+            margin: 10px 0px 30px 0px;
+        }
+        .relegion{
+            margin-bottom: 30px;
+        }
+        .moslem{
+            margin-top: 10px;
+        }
+        .hobby-label{
+            margin-bottom: 10px;
+        }
+        .hobby-input{
+            margin-bottom: 30px;
+        }
+        .submit{
+            background-color: royalblue;
+            padding: 3px 10px 3px 10px;
+            border-radius: 5px;
+            color:seashell;
+            margin-right: 5px;
+            border: none
+        }
+        .moslem-label{
+            border-radius: 10px;
+            background-color: skyblue;
+            padding: 0px 10px 0px 10px;
+        }
+    </style>
+    <title>1</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <form>
+                <div class="textinput">
+                    <label>Nama Lengkap</label>
+                    <input type="text">
+                </div>
+                <div class="textinput">
+                    <label>Tanggal Lahir</label>
+                    <input type="text">
+                </div>
+                <div class="textinput">
+                    <label>No. Hp</label>
+                    <input type="text">
+                </div>
+                <div class="address">
+                    <label>Alamat</label>
+                    <textarea></textarea>
+                </div>
+                <div class="textinput">
+                    <label>Pendidikan Terakhir</label>
+                    <input type="text">
+                </div>
+                <div>  
+                    <div class="relegion">
+                        <label>Agama</label>
+                        <div class="moslem">
+                            <input type="radio" name="relegion" value="islam">
+                            <label class="moslem-label">Islam</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="relegion" value="kristen">
+                            <label>Kristen</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="relegion" value="khatolik">
+                            <label>Khatolik</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="hobby-label">
+                            <label>Hobi</label>
+                        </div>
+                        <div class="hobby-input">
+                            <div>
+                                <input type="checkbox" name="hobby" value="">
+                                <label>Renang</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="mancing" value="">
+                                <label>Mancing</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="game" value="">
+                                <label>Game</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="gibah" value="">
+                                <label>Gibah</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="programming" value="">
+                                <label>Programming</label>
+                            </div>
+                        </div>
+                        <input type="submit" class="submit">
+                        <label>Edit label</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

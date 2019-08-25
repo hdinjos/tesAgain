@@ -1,0 +1,30 @@
+<a href="/form">tambah data</a>
+<h2>Data Biography</h2>
+<table>
+  <tr>
+    <th>id</th>
+    <th>full_name</th> 
+    <th>place_of_birth_id</th>
+    <th>place_of_birth</th>
+    <th>date_of_birth</th>
+    <th>phone_number</th>
+    <th>last_education</th>
+    <th>relegion</th>
+    <th>hobby</th>
+  </tr>
+  {{#each users}}
+  <tr>
+    
+    <td>{{user_id}}</td>
+    <td>{{full_name}}</td>
+    <td>{{id}}</td>
+    <td>{{name}}</td>
+    <td>{{date_of_birth}}</td>
+    <td>{{phone_number}}</td>
+    <td>{{last_education}}</td>
+    <td>{{relegion}}</td>
+    <td>{{hobby_name}}</td>
+    
+  </tr>
+  {{/each}}
+</table>

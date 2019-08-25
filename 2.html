@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2</title>
+</head>
+<body>
+    <div>
+        <label>Silahkan tulis dan cek username</label>
+        <input id="userInput" type="text">
+        <button onclick="cekUsername()">Cek</button>
+        <p id="validedUser"></p>
+    </div>
+    <div>
+        <label>Silahkan tulis dan cek password</label>
+        <input id="passwordInput" type="text">
+        <button onclick="cekPassword()">Cek</button>
+        <p id="validedPassword"></p>
+    </div>
+    <label>Silahkan tulis dan cek email</label>
+    <input id="emailInput" type="text">
+    <button onclick="cekEmail()">Cek</button>
+    <p id="validedEmail"></p>
+
+</body>
+<script>
+    function cekPassword(){
+        var passwordRegex = /^[A-Za-z0-9]*$/;
+        var password = document.getElementById("passwordInput").value;
+        var passwordChar = password.length;
+        var validedPassword;
+
+        if (passwordChar >= 8 && password.match(passwordRegex)) {
+            validedPassword = "jos";
+        }else{
+            validedPassword = "ora  jos"
+        }
+        document.getElementById("validedPassword").innerHTML = validedPassword;
+    }
+    
+    function cekUsername() {
+        var userRegex = /^[a-z]*$/;
+        var userName = document.getElementById("userInput").value;
+        var userChar = userName.length;
+        var validedUser;
+
+        if (userChar >= 8 && userRegex.test(userName)) {
+            validedUser="jos";
+        }
+        else {
+            validedUser="ora jos";
+        }
+        document.getElementById("validedUser").innerHTML = validedUser;
+    }
+    function cekEmail(){
+        var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var email = document.getElementById("emailInput").value;
+        // var emailChar = email.length;
+        var validedEmail;
+        
+        if (email.match(emailRegex)) {
+            validedEmail="jos";
+        }else{
+            validedEmail="ora jos";
+        }
+        document.getElementById("validedEmail").innerHTML = validedEmail;
+    }
+
+    
+</script>
+</html>
