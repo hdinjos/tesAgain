@@ -27,12 +27,12 @@
 </body>
 <script>
     function cekPassword(){
-        var passwordRegex = /^[A-Za-z0-9]*$/;
+        var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/;
         var password = document.getElementById("passwordInput").value;
         var passwordChar = password.length;
         var validedPassword;
 
-        if (passwordChar >= 8 && password.match(passwordRegex)) {
+        if (passwordChar >= 8 && passwordRegex.test(password)) {
             validedPassword = "jos";
         }else{
             validedPassword = "ora  jos"
