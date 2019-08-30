@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>prime</title>
+</head>
+<body>
+
+</body>
+<script>
+    function hitPrime(h,v){
+    var bts = 0;
+    var brs = 0;
+    var prime = v * 10 + 10;
+        for (i=2; i<=prime; i++){
+            if (i%2===1 && (i%3!==0 || i===3) && (i%5!==0 || i===5) && (i%7!==0 || i===7) || i === 2){
+                document.write(i+ ','  )
+                bts++
+                if((bts/h - brs) == 1){
+                    document.write('<br/>')
+                    brs++;
+                } 
+            }
+        }
+    }
+    hitPrime(4,3);
+</script>
+</html>
